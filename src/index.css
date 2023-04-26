@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+ul li {
+  list-style: none;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: linear-gradient(to right, #4f4e50, #6c6c6d);
+  padding: 10px;
+  gap: 5px;
+}
+
+.nav-bar {
+  background-color: #6c6c6d;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-bar p{
+  color: rgb(196, 175, 175);
+  font-size: 25px;
+}
+
+.nav-link a{
+  text-decoration:  none;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-pos {
+  display: flex;
+  gap: 5%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-image: linear-gradient(to right, #4f4e50, #6c6c6d);
+  color: white;
+}
+
+.details > p:nth-child(odd) {
+  background-color: #98989c;
+}
+
+.details img {
+  width: 30%;
+}
+
+.details-para {
+  padding: 10px;
+}
+
+.current-price li:nth-child(odd) {
+  background-color: #555558;
+}
+
+.current-price >p {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.current-price li {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.last-update {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+}
+
+.detail-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+/* .items-grid li:nth-child(even) {
+  background-color: rgb(189, 21, 49);
+  background-image: radial-gradient(#5a5252 1px, transparent 10px),
+                      radial-gradient(#5e5454 1px, transparent 10px);
+  background-size: 20px 20px;
+}
+
+.items-grid li:nth-child(odd) {
+  background-color: rgb(173, 46, 67);
+}
+
+.items-grid li:nth-child(2n+1) {
+  grid-row: span 2; 
+} */
+.items {
+  border: 2px solid white;
+  padding: 10px;
+}
+
+.items a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+
+.items:hover {
+  cursor: pointer;
+}
+
+.list-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.list-wrapper img {
+  width: 30%;
+}
