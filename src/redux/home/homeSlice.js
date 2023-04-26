@@ -1,17 +1,14 @@
-/* eslint-disable */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-
 
 const url = 'https://api.coingecko.com/api/v3/coins/';
 
-export const getFinance = createAsyncThunk ('get/getFinanceData', async () => fetch(url)
-    .then((res) => res.json())
-);
+export const getFinance = createAsyncThunk('get/getFinanceData', async () => fetch(url)
+  .then((res) => res.json()));
 
 const initialState = {
-    financeData: [],
-    isLoading: false,
-    error: ''
+  financeData: [],
+  isLoading: false,
+  error: '',
 };
 
 const HomeSlice = createSlice({

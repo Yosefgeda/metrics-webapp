@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 ul li {
@@ -24,13 +24,13 @@ ul li {
   justify-content: space-around;
 }
 
-.nav-bar p{
+.nav-bar p {
   color: rgb(196, 175, 175);
   font-size: 25px;
 }
 
-.nav-link a{
-  text-decoration:  none;
+.nav-link a {
+  text-decoration: none;
   color: white;
   font-size: 20px;
 }
@@ -48,10 +48,6 @@ ul li {
   color: white;
 }
 
-.details > p:nth-child(odd) {
-  background-color: #98989c;
-}
-
 .details img {
   width: 30%;
 }
@@ -60,22 +56,26 @@ ul li {
   padding: 10px;
 }
 
-.current-price li:nth-child(odd) {
-  background-color: #555558;
-}
-
-.current-price >p {
+.current-price > p {
   text-align: center;
   padding: 10px;
   font-size: 20px;
   text-decoration: underline;
 }
 
+.details > p:nth-child(odd) {
+  background-color: #98989c;
+}
+
 .current-price li {
   display: flex;
   gap: 20px;
-  padding: 10px;
-  justify-content: space-around;
+  padding: 10px 40px;
+  justify-content: space-between;
+}
+
+.current-price li:nth-child(odd) {
+  background-color: #555558;
 }
 
 .last-update {
@@ -92,20 +92,7 @@ ul li {
   justify-content: space-between;
   gap: 20px;
 }
-/* .items-grid li:nth-child(even) {
-  background-color: rgb(189, 21, 49);
-  background-image: radial-gradient(#5a5252 1px, transparent 10px),
-                      radial-gradient(#5e5454 1px, transparent 10px);
-  background-size: 20px 20px;
-}
 
-.items-grid li:nth-child(odd) {
-  background-color: rgb(173, 46, 67);
-}
-
-.items-grid li:nth-child(2n+1) {
-  grid-row: span 2; 
-} */
 .items {
   border: 2px solid white;
   padding: 10px;

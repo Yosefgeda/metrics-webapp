@@ -76,14 +76,15 @@
 
 ### Key Features <a name="key-features"></a>
 
-Displays Data of mer than 50 cryptos. And detail datas are available
+Displays Data of more than 50 cryptos. And detail datas are available
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> You can visit the site [HERE]()
+> You can visit the site [HERE](https://metrics-webapp2.onrender.com)
+> Or Watch loom video [HERE](https://www.loom.com/share/68186d5f06f44b3dafe21f1fa3679a68)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -128,7 +129,7 @@ Linter actions are integreated with github.
 
 ### Deployment
 
-> You can visit the site [HERE]()
+> You can visit the site [HERE](https://metrics-webapp2.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -172,9 +173,7 @@ If you like this project follow and give thumbs up on likedin
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank to my coding partener.
-
+I would like to thank to Nelson Sakwa on Behance original designer of the web page structure.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
