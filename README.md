@@ -1,7 +1,7 @@
 # Metrics-Webapp
 
 <a name="readme-top"></a>
-
+<div><img src='./src/img/Untitled.png'><img src='./src/img/details.png'></div>
 
 
 <div align="center">
