@@ -29,6 +29,43 @@ ul li {
   font-size: 25px;
 }
 
+.nav-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.crypto-head {
+  border: 1pc solid #4f4e50;
+  background-color: #6c6c6d;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  padding: 10px;
+}
+
+.crypto-btn {
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: transparent;
+  color: white;
+  padding: 5px 10px;
+}
+
+.nav-icons li {
+  color: white;
+}
+
 .nav-link a {
   text-decoration: none;
   color: white;

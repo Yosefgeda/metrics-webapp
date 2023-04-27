@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { FaArrowRight } from 'react-icons/fa';
+import Navbar from './Navbar';
 
 function Details() {
   const detailData = useSelector((store) => store.details.detailData);
@@ -13,53 +14,50 @@ function Details() {
   }
 
   return (
-    <div className="details">
-
-      <div className="last-update">
-        <img src={detailData.image.large} alt="crypto-currency" />
-        <div>
-          <p>
-            name:
-            {detailData.name}
-          </p>
-          <p>
-            Last Updated:
-            {detailData.last_updated}
-          </p>
-        </div>
-      </div>
-
-      <p className="details-para">
-        Description:
-        {detailData.description.en}
-      </p>
-      <p className="details-para">
-        Coingecko Rank:
-        {detailData.coingecko_rank}
-      </p>
-      <p className="details-para">
-        Community Score:
-        {detailData.community_score}
-      </p>
-      <ul className="current-price">
-        <p>Current Price</p>
-        {Object.entries(obj).map(([key, value]) => (
-          <li key={key}>
+    <>
+      <Navbar />
+      <div className="details">
+        <div className="last-update">
+          <img src={detailData.image.large} alt="crypto-currency" />
+          <div>
             <p>
-              {key}
-              :
+              Name:
+              {detailData.name}
             </p>
-            {' '}
-            <div className="detail-icon">
-              <p>{value}</p>
+            <p>
+              Last Updated:
+              {detailData.last_updated}
+            </p>
+          </div>
+        </div>
+        <p className="details-para">
+          Coingecko Rank:
+          {detailData.coingecko_rank}
+        </p>
+        <p className="details-para">
+          Community Score:
+          {detailData.community_score}
+        </p>
+        <ul className="current-price">
+          <p>Current Price</p>
+          {Object.entries(obj).map(([key, value]) => (
+            <li key={key}>
+              <p>
+                {key}
+                :
+              </p>
               {' '}
-              <FaArrowRight />
-            </div>
-          </li>
-        ))}
-      </ul>
+              <div className="detail-icon">
+                <p>{value}</p>
+                {' '}
+                <FaArrowRight />
+              </div>
+            </li>
+          ))}
+        </ul>
 
-    </div>
+      </div>
+    </>
   );
 }
 

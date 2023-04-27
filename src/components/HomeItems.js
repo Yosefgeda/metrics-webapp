@@ -1,11 +1,13 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+/* eslint-disable */
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from 'react-icons/fa';
 import { getDetails } from '../redux/details/detailsSlice';
+import { getFinance } from '../redux/home/homeSlice';
+import Navbar from './Navbar';
 
-function HomeItems(props) {
-  const { data } = props;
+function HomeItems({ data, financeData }) {
   if (!data || !data.id) {
     return null;
   }
@@ -14,30 +16,31 @@ function HomeItems(props) {
   useEffect(() => {
     dispatch(getDetails(data.id));
   }, [dispatch]);
-
+  
   const handleClick = () => {
     dispatch(getDetails(data.id));
   };
-
+  
   return (
-    <li className="items">
-      <Link to="/details" onClick={handleClick}>
-        <div className="list-wrapper">
-          <img src={data.image.large} alt="crypto-currency" />
-          <div className="icon-pos">
-
-            <div>
-              <div className="data-name">{data.name}</div>
+    <>
+      <li className="items" key={data.id}>
+        <Link to="/details" onClick={handleClick}>
+          <div className="list-wrapper">
+            <img src={data.image.large} alt="crypto-currency" />
+            <div className="icon-pos">
               <div>
-                Current Price:
-                {data.market_data.current_price.usd}
+                <div className="data-name">{data.name}</div>
+                <div>
+                  Current Price:
+                  {data.market_data.current_price.usd}
+                </div>
               </div>
+              <FaArrowRight className="icon" />
             </div>
-            <FaArrowRight className="icon" />
           </div>
-        </div>
-      </Link>
-    </li>
+        </Link>
+      </li>
+    </>
   );
 }
 
