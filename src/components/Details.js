@@ -16,7 +16,7 @@ function Details() {
   return (
     <>
       <Navbar />
-      <div className="details">
+      <div className="details" data-testid="test-id">
         <div className="last-update">
           <img src={detailData.image.large} alt="crypto-currency" />
           <div>

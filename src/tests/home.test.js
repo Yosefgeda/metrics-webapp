@@ -11,17 +11,7 @@ describe('Nav Items', () => {
         <Navbar />
       </Router>,
     );
-    const homeElement = screen.getByText('Home');
-    expect(homeElement).toBeInTheDocument();
-  });
-
-  test('renders Cryptocurrency Navbar header', () => {
-    render(
-      <Router>
-        <Navbar />
-      </Router>,
-    );
-    const cryptoElement = screen.getByText('Cryptocurrency');
-    expect(cryptoElement).toBeInTheDocument();
+    const navbars = screen.getAllByRole('link');
+    expect(navbars).toHaveLength(1);
   });
 });

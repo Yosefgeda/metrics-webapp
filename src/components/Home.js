@@ -8,15 +8,20 @@ const imgSrc = require('../img/download.jpg');
 
 function Home() {
   const dispatch = useDispatch();
+
   useEffect(() => {
     dispatch(getFinance());
   }, [dispatch]);
+
   const financeData = useSelector((store) => store.finance.financeData);
+
   const [filteredData, setFilteredData] = useState([]);
+
   const handleFilter = () => {
     const filteredArray = financeData.filter((item) => item.market_data.current_price.usd > 100);
     setFilteredData(filteredArray);
   };
+
   const viewAll = () => {
     setFilteredData(financeData);
   };
